@@ -205,5 +205,6 @@ p {
 @keyframes hide {
   50% {
     opacity: 0;
+    background: red;
   }
 }
