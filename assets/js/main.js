@@ -9,39 +9,30 @@ berechnen = () => {
   const größeVal = document.querySelector("#körpergröße").value;
   const alterVal = document.querySelector("#alter").value;
   const gewichtVal = document.querySelector("#gewicht").value;
+  const aktivitätVal = document.querySelector("select").value;
   const körperbauVal = document.querySelector(
     "input[name='körperbau']:checked"
   ).value;
-  const aktivitätVal = document.querySelector("select").value;
+  const data1 = Number(körperbauVal.slice(0, 5));
+  console.log(data1);
+  const data2 = Number(körperbauVal.slice(6, 10));
+  console.log(data2);
+  const data3 = Number(körperbauVal.slice(12, 15));
+  console.log(data3);
+  const data4 = Number(körperbauVal.slice(16, 18));
+  console.log(data4);
 
-  //* weiblich
-  if (körperbauVal == "weiblich") {
-    const grundUmsatzkcal = Math.round(
-      655.1 + 9.6 * gewichtVal + 1.8 * größeVal - 4.7 * alterVal
-    );
-    const gesamtUmsatzkcal = Math.round(grundUmsatzkcal * aktivitätVal);
-    const grundUmsatzkj = Math.round(grundUmsatzkcal * 4.187);
-    const gesamtUmsatzkj = Math.round(gesamtUmsatzkcal * 4.187);
+  const grundUmsatzkcal = Math.round(
+    data1 + data2 * gewichtVal + data3 * größeVal - data4 * alterVal
+  );
+  const gesamtUmsatzkcal = Math.round(grundUmsatzkcal * aktivitätVal);
+  const grundUmsatzkj = Math.round(grundUmsatzkcal * 4.187);
+  const gesamtUmsatzkj = Math.round(gesamtUmsatzkcal * 4.187);
 
-    outputGrundkcal.innerHTML = grundUmsatzkcal;
-    outputGesamtkcal.innerHTML = gesamtUmsatzkcal;
-    outputGrundkj.innerHTML = grundUmsatzkj;
-    outputGesamtkj.innerHTML = gesamtUmsatzkj;
-
-    //* männlich
-  } else {
-    const grundUmsatzkcal = Math.round(
-      66.47 + 13.7 * gewichtVal + 5 * größeVal - 6.8 * alterVal
-    );
-    const gesamtUmsatzkcal = Math.round(grundUmsatzkcal * aktivitätVal);
-    const grundUmsatzkj = Math.round(grundUmsatzkcal * 4.187);
-    const gesamtUmsatzkj = Math.round(gesamtUmsatzkcal * 4.187);
-
-    outputGrundkcal.innerHTML = grundUmsatzkcal;
-    outputGesamtkcal.innerHTML = gesamtUmsatzkcal;
-    outputGrundkj.innerHTML = grundUmsatzkj;
-    outputGesamtkj.innerHTML = gesamtUmsatzkj;
-  }
+  outputGrundkcal.innerHTML = grundUmsatzkcal;
+  outputGesamtkcal.innerHTML = gesamtUmsatzkcal;
+  outputGrundkj.innerHTML = grundUmsatzkj;
+  outputGesamtkj.innerHTML = gesamtUmsatzkj;
 };
 
 reseten = () => {

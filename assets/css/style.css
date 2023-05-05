@@ -59,7 +59,7 @@ form {
   content: "Weiblich";
   font-size: 1.4rem;
   font-weight: 900;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 10px;
   border-radius: 10px;
 }
