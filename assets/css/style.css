@@ -21,6 +21,7 @@ section {
   padding: 20px;
   border-radius: 20px;
   background: rgb(229, 229, 229);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 h1 {
@@ -55,6 +56,10 @@ form {
   border-radius: 10px;
 }
 
+.körperbau input:hover {
+  transform: scale(1.2);
+}
+
 .körperbau input:after {
   content: "Weiblich";
   font-size: 1.4rem;
@@ -75,7 +80,7 @@ form {
 .inputs input {
   display: block;
   width: 25rem;
-  height: 2rem;
+  height: 2.2rem;
   padding: 10px;
   font-size: 1.2rem;
   margin-bottom: 2vw;
@@ -89,7 +94,7 @@ form {
 
 select {
   width: 25rem;
-  height: 2rem;
+  height: 2.2rem;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   border-radius: 10px;
@@ -114,6 +119,11 @@ input[type="submit"] {
   margin-bottom: 1rem;
 }
 
+input[type="submit"]:active {
+  transform: scale(1.1);
+  box-shadow: rgb(104, 174, 245) 0px 5px 15px;
+}
+
 input[type="reset"] {
   width: 5rem;
   height: 2rem;
@@ -122,6 +132,11 @@ input[type="reset"] {
   color: red;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+input[type="reset"]:active {
+  transform: scale(1.1);
+  box-shadow: red 0px 30px 60px -12px inset, red 0px 18px 36px -18px inset;
 }
 
 article {
