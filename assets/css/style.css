@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgb(229, 229, 229);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(0, 128, 255);
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.körperbau {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.körperbau label {
+  display: inline;
+  display: none;
+}
+
+.körperbau input {
+  appearance: none;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.körperbau input:after {
+  content: "Weiblich";
+  font-size: 1.4rem;
+  font-weight: 900;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.körperbau input:checked {
+  background: rgb(104, 174, 245);
+}
+
+.körperbau input:nth-of-type(2):after {
+  content: "Männlich";
+}
+
+.inputs input {
+  display: block;
+  width: 25rem;
+  height: 2rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 2vw;
+  border-radius: 10px;
+}
+
+.inputs label {
+  display: block;
+  font-size: 1.2rem;
+}
+
+select {
+  width: 25rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.buttons {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="submit"] {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  color: rgb(30, 30, 180);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+input[type="reset"] {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: red;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+article {
+  width: 20rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(0, 128, 255);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
