@@ -56,7 +56,7 @@ form {
   border-radius: 10px;
 }
 
-.körperbau input:hover {
+.körperbau input:checked {
   transform: scale(1.2);
 }
 
