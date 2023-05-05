@@ -41,3 +41,17 @@ reseten = () => {
   outputGrundkj.innerHTML = "";
   outputGesamtkj.innerHTML = "";
 };
+
+berechneMe = () => {
+  document.querySelector("body").classList.add("animation-shake");
+  setTimeout(() => {
+    document.querySelector("body").classList.remove("animation-shake");
+  }, 1000);
+};
+
+resetMe = () => {
+  document.querySelector("body").classList.add("animation-hide");
+  setTimeout(() => {
+    document.querySelector("body").classList.remove("animation-hide");
+  }, 1000);
+};
