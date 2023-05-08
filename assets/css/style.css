@@ -256,5 +256,6 @@ p {
   h3 {
     border-bottom: 1px solid black;
     margin-bottom: 3vw;
+    padding: 10px;
   }
 }
