@@ -217,8 +217,8 @@ p {
   }
 
   .inputs input,
-  select,
-  article {
+  article,
+  select {
     width: 80vw;
   }
 
@@ -228,5 +228,9 @@ p {
 
   .körperbau input:after {
     font-size: 1rem;
+  }
+
+  .p-umsatz {
+    text-align: left;
   }
 }
