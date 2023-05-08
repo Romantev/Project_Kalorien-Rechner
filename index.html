@@ -13,8 +13,8 @@
         <h1>Kalorien Rechner</h1>
         <form onreset="reseten()" onsubmit="berechnen(); return false">
           <div class="körperbau">
-            <input type="radio" name="körperbau" value="655.1 09.6 1.8 4.7" checked />
-            <input type="radio" name="körperbau" value="66.47 13.7 5.0 6.8" />
+            <input type="radio" name="körperbau" value="655.1 09.6 1.8 4.7" onclick="clickAnimation()" checked />
+            <input type="radio" name="körperbau" value="66.47 13.7 5.0 6.8" onclick="clickAnimation()"/>
           </div>
           <div class="inputs">
             <label for="alter">Alter</label>
@@ -52,7 +52,7 @@
             </option>
           </select>
           <div class="buttons">
-            <input type="submit" value="Berechnen" onclick="berechneMe()"/>
+            <input  id="berechnen" type="submit" value="Berechnen" onclick="berechneMe()"/>
             <input type="reset" value="Reset" onclick="resetMe()">
           </div>
         </form>
@@ -60,10 +60,10 @@
           <div></div>
           <h3>kcal</h3>
           <h3>kJ</h3>
-          <p class="p-umsatz">Grundumsatz</p>
+          <p class="p-umsatz">Grundumsatz:</p>
           <p class="grund-kcal"></p>
           <p class="grund-kj"></p>
-          <p class="p-umsatz">Gesamtumsatz</p>
+          <p class="p-umsatz">Gesamtumsatz:</p>
           <p class="gesamt-kcal"></p>
           <p class="gesamt-kj"></p>
         </article>

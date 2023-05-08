@@ -46,12 +46,19 @@ berechneMe = () => {
   document.querySelector("body").classList.add("animation-shake");
   setTimeout(() => {
     document.querySelector("body").classList.remove("animation-shake");
-  }, 1000);
+  }, 200);
 };
 
 resetMe = () => {
   document.querySelector("body").classList.add("animation-hide");
   setTimeout(() => {
     document.querySelector("body").classList.remove("animation-hide");
-  }, 1000);
+  }, 500);
+};
+
+clickAnimation = () => {
+  document.querySelector("#berechnen").classList.add("animation-scale");
+  setTimeout(() => {
+    document.querySelector("#berechnen").classList.remove("animation-scale");
+  }, 500);
 };

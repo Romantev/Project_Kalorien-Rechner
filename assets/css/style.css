@@ -61,6 +61,10 @@ form {
   background: rgb(104, 174, 245);
 }
 
+.körperbau input:nth-of-type(1):checked {
+  background: rgb(204, 130, 248);
+}
+
 .körperbau input:after {
   content: "Weiblich";
   font-size: 1.4rem;
@@ -156,11 +160,15 @@ p {
 }
 
 .animation-shake {
-  animation: shakeit 0.5s linear alternate;
+  animation: shakeit 0.2s linear alternate;
 }
 
 .animation-hide {
-  animation: hide 1s linear alternate;
+  animation: hide 0.5s linear alternate;
+}
+
+.animation-scale {
+  animation: scale 0.5s linear alternate;
 }
 
 @keyframes shakeit {
@@ -206,6 +214,12 @@ p {
   }
 }
 
+@keyframes scale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 @media screen and (max-width: 600px) {
   main {
     height: auto;
@@ -213,6 +227,7 @@ p {
 
   section {
     width: 100vw;
+    height: 100vh;
     border-radius: 0;
     padding: 10px;
   }
@@ -236,5 +251,12 @@ p {
 
   .p-umsatz {
     text-align: left;
+    margin-bottom: 5vw;
+  }
+
+  article div,
+  h3 {
+    border-bottom: 1px solid black;
+    margin-bottom: 3vw;
   }
 }
