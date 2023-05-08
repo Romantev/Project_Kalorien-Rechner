@@ -17,10 +17,15 @@ berechnen = () => {
   console.log(data1);
   const data2 = Number(körperbauVal.slice(6, 10));
   console.log(data2);
-  const data3 = Number(körperbauVal.slice(12, 15));
+  const data3 = Number(körperbauVal.slice(11, 14));
   console.log(data3);
-  const data4 = Number(körperbauVal.slice(16, 18));
+  const data4 = Number(körperbauVal.slice(15, 18));
   console.log(data4);
+
+  console.log({ data1 });
+  console.log({ data2 });
+  console.log({ data3 });
+  console.log({ data4 });
 
   const grundUmsatzkcal = Math.round(
     data1 + data2 * gewichtVal + data3 * größeVal - data4 * alterVal
