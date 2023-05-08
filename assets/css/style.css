@@ -219,6 +219,10 @@ p {
   .inputs input,
   select,
   article {
-    width: 80%;
+    width: 80vw;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 }
