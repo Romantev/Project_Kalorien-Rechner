@@ -217,9 +217,12 @@ p {
   }
 
   .inputs input,
-  article,
   select {
     width: 80vw;
+  }
+
+  article {
+    width: 90vw;
   }
 
   h1 {
