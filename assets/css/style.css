@@ -225,4 +225,8 @@ p {
   h1 {
     font-size: 2rem;
   }
+
+  .körperbau input:after {
+    font-size: 1rem;
+  }
 }

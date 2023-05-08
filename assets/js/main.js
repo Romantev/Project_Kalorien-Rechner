@@ -22,11 +22,6 @@ berechnen = () => {
   const data4 = Number(körperbauVal.slice(15, 18));
   console.log(data4);
 
-  console.log({ data1 });
-  console.log({ data2 });
-  console.log({ data3 });
-  console.log({ data4 });
-
   const grundUmsatzkcal = Math.round(
     data1 + data2 * gewichtVal + data3 * größeVal - data4 * alterVal
   );
