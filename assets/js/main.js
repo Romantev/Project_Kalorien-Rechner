@@ -57,8 +57,8 @@ resetMe = () => {
 };
 
 clickAnimation = () => {
-  document.querySelector("#berechnen").classList.add("animation-scale");
+  document.querySelector(".berechnen").classList.add("animation-scale");
   setTimeout(() => {
-    document.querySelector("#berechnen").classList.remove("animation-scale");
+    document.querySelector(".berechnen").classList.remove("animation-scale");
   }, 500);
 };
